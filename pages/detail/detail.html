@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情-奶牛接力</title>
+    <link rel="stylesheet" href="./detail.css" type="text/css">
+    <script type="text/javascript" src="./detail.js"></script>
+</head>
+<body>
+<form action="" method="POST" name="" enctype="multipart/form-data">
+    <!-- headerNav begin -->
+    <div id="headerNav">
+        <ul id="headerNavLeft">
+            <li class="nav" id="username">
+                <span>牛奶草莓</span>
+                <ul class="subNav">
+                    <li>账号管理</li>
+                    <li id="signOut">退出登录</li>
+                </ul>
+            </li>
+            <li class="nav">我的订单</li>
+        </ul>
+        <ul id="headerNavRight">
+            <li class="nav">
+                <span class="navTitle">我的主页</span>
+                <img class="arrowImg"  src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>已买到的宝贝</li>
+                    <li>我的足迹</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <img class="shopCartIcon" src="../../assesets/imgs/shoppingCart.png">
+                <span class="navTitle">购物车</span> 
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <div class="shopCart subNav">
+                    <span class="title">最近加入的宝贝：</span>
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <img src="../../assesets/imgs/goods7.png" width="40px">
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <a href="#" title="AiChef 法式西点钻石心慕斯模具蛋糕立体心形爱心硅胶烘焙巧克力">
+                                        <span>AiChef 法式西点钻石心慕斯...</span>    
+                                    </a>
+                                    <span class="money">￥185</span>
+                                </div>
+                                <div>
+                                    <span class="type">颜色分类:7寸升级版钻石心[更立体]</span>
+                                    <span class="delete">删除</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="button" name="" id="checkShopCart" value="查看我的购物车">
+                </div>
+            </li>
+            <li class="nav">
+                <span class="navTitle">收藏夹</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>收藏的宝贝</li>
+                    <li>收藏的店铺</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">卖家中心</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>卖家服务中心</li>
+                    <li>卖家培训中心</li>
+                    <li>体验中心</li>
+                    <li>问商友</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">联系客服</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>消费者客服</li>
+                    <li>卖家客服</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <!-- header begin  -->
+    <div class="header">
+        <div class="headerContainer">
+            <div class="logo">
+                <img src="../../assesets/imgs/logo.png" width="200px">
+            </div>
+            <div class="searchContainer">
+                <div class="searchTip">
+                    <span>高数上下册</span>
+                    <span>电风扇</span>
+                    <span>蕾丝连衣裙</span>
+                    <span>尤克里里</span>
+                    <span>公务员真题</span>
+                    <span>蓝牙耳机</span>
+                </div>
+                <div class="searchBox">
+                    <input id="search" name="" type="text" placeholder="&nbsp;&nbsp;二手教材/生活用品/文具">
+                    <button id="searchBtn">搜索</button>
+                    <img src="../../assesets/imgs/scan.png" width="20px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav begin -->
+    <div class="goodsNav">
+        <div class="goodsSubNav">
+            商品分类
+        </div>
+    </div>
+    <!-- container begin -->
+    <div class="container">
+        <div class="detail">
+            <div class="itemDetail">
+                <div class="itemImg">
+                    <div class="bigImg" id="smil_box">
+                        <div class="showImg">
+                            <img  src="../../assesets/imgs/detail1.PNG">
+                        </div>
+                        <div class="showImg">
+                            <img  src="../../assesets/imgs/detail2.PNG">
+                        </div>
+                        <div class="showImg">
+                            <img  src="../../assesets/imgs/detail3.PNG">
+                        </div>
+                        <div class="showImg">
+                            <img  src="../../assesets/imgs/detail4.PNG">
+                        </div>
+                        <div class="showImg">
+                            <video height="400px" controls>
+                                <source src="../../assesets/imgs/videoDemo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <!-- <div id="mask"></div> -->
+                        <div class="clear"></div>
+                    </div>
+                    <!-- <div class="big_box">
+                        <img  src="../../assesets/imgs/detail1.PNG" height="800" width="800" alt="" id="big_img">
+                        <img  src="../../assesets/imgs/detail2.PNG" height="800" width="800" alt="" id="big_img">
+                        <img  src="../../assesets/imgs/detail3.PNG" height="800" width="800" alt="" id="big_img">
+                        <img  src="../../assesets/imgs/detail4.PNG" height="800" width="800" alt="" id="big_img">
+                    </div> -->
+                    <div class="smallImg">
+                        <ul>
+                            <li class="picLi">
+                                <div>
+                                    <div class="pic">
+                                        <img src="../../assesets/imgs/detail1.PNG" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="picLi">
+                                <div>
+                                    <div class="pic">
+                                        <img src="../../assesets/imgs/detail2.PNG" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="picLi">
+                                <div>
+                                    <div class="pic">
+                                        <img src="../../assesets/imgs/detail3.PNG" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="picLi">
+                                <div>
+                                    <div class="pic">
+                                        <img src="../../assesets/imgs/detail4.PNG" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="picLi" id="picLiVideo">
+                                <div class="video">
+                                    <div class="pic">
+                                        <img src="../../assesets/imgs/detail1.PNG" alt="">
+                                    </div>
+                                    <img class="sVideo" src="../../assesets/imgs/video.png" width="35px">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="collectStar">
+                        <a href="#">
+                            <img src="../../assesets/imgs/star.png" alt="" width="20px">
+                            <span>收藏宝贝（142人气）</span>
+                        </a>                       
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <div class="itemName">二手高数第七版同济大学高等数学同济七版上下册+习题全解辅导书</div>
+                    <div class="originalPrice">
+                        <div class="line1 info">价格</div>
+                        <div class="line1 originalPriceNum">￥60.30</div>
+                        <div class="liner">
+                            <div class="right">
+                                <a href="#" class="num">454</a><br>
+                                <span class="txt">累计评论</span>
+                            </div>
+                            <div class="bar"></div>
+                            <div class="right">
+                                <span class="num">45</span><br>
+                                <span class="txt">交易成功</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentPrice">
+                        <div class="info">接力价</div>
+                        <div class="num">￥30</div>
+                    </div>
+                    <div class="address">
+                        <div class="info">配送</div>
+                        <div>
+                            <span>日华公寓</span>
+                            <span> 至 </span>
+                            <span>夏华公寓</span>
+                            <span>交易方式</span>
+                            <select name="" id="change">
+                                <option value="">自取</option>
+                                <option value="">配送</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="itemAmount">
+                        <div class="info">数量</div>
+                        <div>
+                            <input type="button" value="-" id="minBtn">
+                            <input type="text" value="1" id="count">
+                            <input type="button" value="+" id="plusBtn">
+                            <span id="judge"></span>
+                        </div>
+                    </div>
+                    <div class="promise">
+                        <div class="info">服务承诺</div>
+                        <div>
+                            <img src="../../assesets/imgs/proIcon2.PNG" width="20px">
+                            <span>七天无理由退货</span>
+                            <img src="../../assesets/imgs/proIcon1.PNG" width="20px">
+                            <span>极速退款</span>
+                        </div>
+                    </div>
+                    <div class="shopBtn">
+                            <div id="toShopCartBtn"><a href="#">加入购物车</a></div>
+                            <div id="buyNowBtn"><a href="#">立即购买</a></div>    
+                    </div>
+                    <div class="buyerInfo">
+                        <img src="../../assesets/imgs/proImg3.PNG" width="500px">
+                    </div>
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div id="goodsBtn" class="check">商品详情</div>
+            <div id="remarkBtn">累计评论</div>
+        </div>
+        <div class="infoAndMark">
+            <div id="goodsDetail">
+                <div id="details">aaa</div>
+                <div class="detailImg">
+                    <a id="goodsDetail">
+                        <img src="../../assesets/imgs/goodsDetail.jpg" alt="">
+                    </a>
+                    <a id="menu">
+                        <img src="../../assesets/imgs/menu.png" alt="">
+                    </a>
+                    <a id="itemMark">
+                        <img src="../../assesets/imgs/itemMark.png" alt="">
+                    </a>
+                </div>
+                <div id="detailList">
+                    <ul>
+                        <li>
+                            <a href="#goodsDetail">                                    <img src="../../assesets/imgs/tag.png" alt="" width="20px">
+                                商品介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu">
+                                <img src="../../assesets/imgs/tag.png" alt="" width="20px">
+                                目录
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#itemMark">
+                                <img src="../../assesets/imgs/tag.png" alt="" width="20px">
+                                服务质量
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="markDetail">
+                <div class="choose">
+                    <form action="">
+                        <span>全部</span>
+                        <input type="radio" name="choose" id="all">
+                        <span>图片</span>
+                        <input type="radio" name="choose" id="pic">
+                        <span>追评</span>
+                        <input type="radio" name="choose" id="follow">
+                        <span>好评</span>
+                        <input type="radio" name="choose" id="good">
+                        <span>中评</span>
+                        <input type="radio" name="choose" id="middle">
+                        <span>差评</span>
+                        <input type="radio" name="choose" id="bad">
+                    </form>
+                </div>
+                <div class="markTxt">
+                    <ul>
+                        <li>
+                            <div class="remarkUser">
+                                <div class="remarkSculpture">
+                                    <img src="../../assesets/imgs/pigge.jpg" alt="">
+                                </div>
+                                <div class="name">pei**qi</div>
+                            </div>
+                            <div class="remarkTxt">
+                                <div class="remark">
+                                    <span>书很好，印刷很清晰，赠品也很多，好评，加油</span>
+                                </div>
+                                <div class="remarkImg">
+                                    <div><img src="../../assesets/imgs/goods1.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods2.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods3.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods4.png" alt=""></div>
+                                </div>
+                                <div class="time">
+                                    <span>2019年07月05日 14:38</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="remarkUser">
+                                <div class="remarkSculpture">
+                                    <img src="../../assesets/imgs/pigge.jpg" alt="">
+                                </div>
+                                <div class="name">pei**qi</div>
+                            </div>
+                            <div class="remarkTxt">
+                                <div class="remark">
+                                    <span>书很好，印刷很清晰，赠品也很多，好评，加油</span>
+                                </div>
+                                <div class="remarkImg">
+                                    <div><img src="../../assesets/imgs/goods1.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods2.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods3.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods4.png" alt=""></div>
+                                </div>
+                                <div class="time">
+                                    <span>2019年07月05日 14:38</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="remarkUser">
+                                <div class="remarkSculpture">
+                                    <img src="../../assesets/imgs/pigge.jpg" alt="">
+                                </div>
+                                <div class="name">pei**qi</div>
+                            </div>
+                            <div class="remarkTxt">
+                                <div class="remark">
+                                    <span>书很好，印刷很清晰，赠品也很多，好评，加油</span>
+                                </div>
+                                <div class="remarkImg">
+                                    <div><img src="../../assesets/imgs/goods1.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods2.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods3.png" alt=""></div>
+                                    <div><img src="../../assesets/imgs/goods4.png" alt=""></div>
+                                </div>
+                                <div class="time">
+                                    <span>2019年07月05日 14:38</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
+<!-- 缺少
+1、footer
+2、侧边固定工具栏
+-->

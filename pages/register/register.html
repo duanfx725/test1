@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人注册</title>
+    <link rel="stylesheet" type="text/css" href="./register.css">
+</head>
+<body>
+<form action="" method="POST" name="" enctype="multipart/form-data">
+    <!--header begin-->
+    <div class="header">
+        <div class="icon-container">
+            <a href="#">
+                <img src="../../assesets/imgs/logo.png" width="150px">
+            </a>
+            <span class="welcome-signIn">
+                欢迎注册
+            </span>
+            <div class="register-tip">
+                <span>已有账号</span>
+                <a href="../signIn/signIn.html">请登录 ></a>
+            </div>
+        </div>
+    </div>
+    <!--header end-->
+    <div class="container">
+        <div class="row1">
+            <span class="tipTxt">点击添加头像：</span>
+            <img class="headSculpture" src="../../assesets/imgs/head.png">
+            <input type="file" name="" id="fileBtn">
+        </div>
+        <div class="row">
+            <span class="tipTxt" >用户名<span class="star">*</span>：</span>
+            <input class="inputBox" id="username" name="" id="inputUserName" type="text" placeholder="&nbsp;&nbsp;6-18位，字母开头，只能包含字母、数字和下划线">
+            <img class="rightIcon" src="../../assesets/imgs/right.png">
+            <span class="rightTxt"></span>
+            <img class="wrongIcon" src="../../assesets/imgs/wrong.png">
+            <span class="wrongTxt"></span>
+            <span class="reJudgement"></span>
+        </div>
+        <div class="row">
+            <span class="tipTxt" >学号<span class="star">*</span>：</span>           
+            <input class="inputBox" id="studentCode" name="" type="text" placeholder="&nbsp;&nbsp;请填写正确的学号">
+            <img class="rightIcon" src="../../assesets/imgs/right.png">
+            <span class="rightTxt"></span>
+            <img class="wrongIcon" src="../../assesets/imgs/wrong.png">
+            <span class="wrongTxt"></span>
+            <span class="reJudgement"></span>
+        </div>
+        <div class="row">
+            <span class="tipTxt" >手机号<span class="star">*</span>：</span>           
+            <input class="inputBox" id="phone" name="" type="text" placeholder="&nbsp;&nbsp;请填写正确的手机号">
+            <img class="rightIcon" src="../../assesets/imgs/right.png">
+            <span class="rightTxt"></span>
+            <img class="wrongIcon" src="../../assesets/imgs/wrong.png">
+            <span class="wrongTxt"></span>
+        </div>
+        <div class="row">
+            <span class="tipTxt" >密码<span class="star">*</span>：</span>
+            <input class="inputBox" id="password" name="" type="password" placeholder="&nbsp;&nbsp;6-18位，不可包含@/\%四个符号">
+            <img class="rightIcon" src="../../assesets/imgs/right.png">
+            <span class="rightTxt"></span>
+            <img class="wrongIcon" src="../../assesets/imgs/wrong.png">
+            <span class="wrongTxt"></span>
+        </div>
+        <div class="row">
+            <span class="tipTxt" >确认密码<span class="star">*</span>：</span>
+            <input class="inputBox" id="passwordAgain" name="" type="password" placeholder="&nbsp;&nbsp;请输入正确的密码">
+            <img class="rightIcon" src="../../assesets/imgs/right.png">
+            <span class="rightTxt"></span>
+            <img class="wrongIcon" src="../../assesets/imgs/wrong.png">
+            <span class="wrongTxt"></span>
+        </div>
+        <div class="flat">
+            <span class="tipTxt" id="flat">公寓地址<span class="star">*</span>：</span>
+            <div class="flats">
+                <select id="flat" name="">
+                    <option value="chun">春华公寓</option>
+                    <option value="xia">夏华公寓</option>
+                    <option value="qiu">秋华公寓</option>
+                    <option value="dong">冬华公寓</option>
+                    <option value="ri">日华公寓</option>
+                    <option value="yue">月华公寓</option>
+                    <option value="xing">星华公寓</option>
+                    <option value="guang">光华公寓</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="registerPost">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</div>
+
+    <!--footer begin-->
+    <div class="footer">
+        Bluemsun | ZhangTeng · DuanFengxi
+    </div>
+    <!--footer end-->
+    <script type="text/javascript" src="./register.js"></script>
+</form>
+</body>
+</html>

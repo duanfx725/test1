@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+select{
+    outline: none;
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+    background: url("arrow.png") no-repeat scroll right center transparent;
+    padding-right: 14px;
+    color: #666
+}
+option{
+    outline: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+    color: #666;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    position: relative;
+    background-color: #fff;
+}
+.clear{
+    clear: both;
+}
+/* headerNav begin */
+#headerNav{
+    padding: 0px 80px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+
+#headerNavLeft{
+    float: left;
+}
+#headerNav .nav{
+    position: relative;
+    float: left;
+    /* margin-left: 20px; */
+    padding: 6px 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+#headerNav #headerNavRight .nav:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover  .navTitle{
+    color: #db4848;
+}
+#headerNavRight{
+    float: right;
+}
+#headerNav .arrowImg{
+    width: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+#headerNav .shopCartIcon{
+    width: 20px;
+    vertical-align: middle;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.subNav li{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.subNav li:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover .subNav{
+    display: block;
+}
+.shopCart{
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: #fff;
+}
+.shopCart .title{
+    display: block;
+    margin: 14px 10px;
+    font-weight: bold;
+    color: #333;
+}
+.shopCart ul .img{
+    float: left;
+    vertical-align: middle;
+}
+.shopCart ul .txt{
+    float: left;
+}
+.shopCart ul .txt div{
+    margin: 5px;
+}
+.shopCart ul .txt a{
+    color: rgb(78, 78, 78);
+}
+.shopCart ul .txt .money{
+    float: right;
+    color: #db4848;
+}
+.shopCart ul{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    
+}
+.shopCart ul li{
+    background-color: #fff;
+}
+.shopCart ul .delete{
+    float: right;
+    color: #333;
+}
+.shopCart ul .delete:hover{
+    color: #db4848;
+}
+#checkShopCart{
+    float: right;
+    background-color: #db4848;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* secNav begin */
+.secNav{
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    background-color: #db4848;
+}
+.secNav .left{
+     float: left;
+     margin-top: 10px;
+     margin-left: 100px;
+}
+.secNav .left div{
+    float: left;
+}
+.secNav .left span{
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.secNav img{
+    width: 130px;
+}
+.secNav .right{
+    float: right;
+}
+.secNav .right{
+    margin: 20px 100px;
+    background-color: #fff;
+}
+.secNav .right input{
+    vertical-align: middle;
+    float: left;
+}
+.secNav .search1{
+    width: 250px;
+    height: 24px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.secNav .search2{
+    width: 40px;
+    height: 24px;
+    border: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+/* container begin */
+.container{
+    width: 1000px;
+    margin: 80px auto;
+    font-size: 14px;
+    color: #666;
+}
+.row{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.container .subtitle{
+    float: left;
+    display: block;
+    width: 100px;
+    height: 40px;
+}
+.container input{
+    border: 1px solid rgb(180, 180, 180);
+    width: 300px;
+    height: 22px;
+    vertical-align: middle;
+}
+.newDiv{
+    float: left;
+    margin-right: 20px;
+}
+.container .newBtn{
+    width: 20px;
+}
+.nowPrice{
+    position: relative;
+}
+#nowPriseInput{
+    width: 280px;
+}
+#yuan1{
+    position: absolute;
+    top: 3px;
+    left: 360px;
+}
+.xPrice{
+    position: relative;
+    border: 1px solid  rgb(180, 180, 180);
+    width: 280px;
+    margin-left: 100px;
+}
+#xPriceTxt{
+    position: absolute;
+    left: 10px;
+    top: 3px;
+}
+#xPriceInput{
+    width: 350px;
+    border: none;
+}
+#yuan2{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+#accept{
+    width: 30px;
+}
+#reject{
+    width: 30px;
+}
+#addPic{
+    width: 100px;
+}
+.textArea{
+    position: relative;
+}
+#wordCheck{
+    position: absolute;
+    top: 120px;
+    left: 730px;
+}
+.publishBtn{
+    width: 104px;
+    margin: 0px auto;
+}
+.publishBtn a{
+    padding: 10px 20px;
+    background-color: rgb(224, 75, 75);
+    font-size: 16px;
+    color: #fff;
+}
+.imgRow{
+    position: relative;
+}
+#fileBtn{
+    position: absolute;
+    bottom: 5px;
+    left: 220px;
+    width: 70px;
+}

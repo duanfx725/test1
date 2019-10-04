@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    position: relative;
+    background-color: #fff;
+}
+.clear{
+    clear: both;
+}
+a{
+    color: #666;
+}
+/* headerNav begin */
+#headerNav{
+    padding: 0px 80px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+#headerNavLeft{
+    float: left;
+}
+#headerNav .nav{
+    position: relative;
+    float: left;
+    /* margin-left: 20px; */
+    padding: 6px 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+#username .nav:hover{
+    background-color: rgb(255, 233, 233);
+}
+#username .subNav li:hover{
+    box-shadow: 0 2px 2px 2px rgb(255, 233, 233);
+}
+#headerNav .nav:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover  .navTitle{
+    color: #db4848;
+}
+#headerNavRight{
+    float: right;
+}
+#headerNav .arrowImg{
+    width: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+#headerNav .shopCartIcon{
+    width: 20px;
+    vertical-align: middle;
+}
+#returnIndex{
+    color: #666;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.subNav li{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.subNav li:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover .subNav{
+    display: block;
+}
+.shopCart{
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: #fff;
+}
+.shopCart .title{
+    display: block;
+    margin: 14px 10px;
+    font-weight: bold;
+    color: #333;
+}
+.shopCart ul .img{
+    float: left;
+    vertical-align: middle;
+}
+.shopCart ul .txt{
+    float: left;
+}
+.shopCart ul .txt div{
+    margin: 5px;
+}
+.shopCart ul .txt a{
+    color: rgb(78, 78, 78);
+}
+.shopCart ul .txt .money{
+    float: right;
+    color: #db4848;
+}
+.shopCart ul{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    
+}
+.shopCart ul li{
+    background-color: #fff;
+}
+.shopCart ul .delete{
+    float: right;
+    color: #333;
+}
+.shopCart ul .delete:hover{
+    color: #db4848;
+}
+#checkShopCart{
+    float: right;
+    background-color: #db4848;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* container begin */
+.container{
+    width: 1000px;
+    margin: 50px auto;
+}
+.remarkTop .remarkBar{
+    height: 40px;
+    border-bottom: 2px solid #db4848;
+    background-color: rgba(236, 236, 236, 0.89);
+}
+.remarkTop .remarkBar .title{
+    float: left;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #db4848;
+}
+.remarkTop .remarkBar .seller{
+    float: right;
+    margin: 10px 20px;
+    font-size: 14px;
+    color: #666;
+}
+.remark{
+    height: 280px;
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 1px dotted rgb(135, 173, 255);
+    background-color: rgba(243, 243, 243, 0.63);
+}
+.remarkContainer{
+    border: 1px solid rgb(214, 228, 255);
+}
+.remark .remarkImg{
+    float: left;
+    width: 130px;
+    margin-left: 70px;
+    padding: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    font-size: 12px;
+    color: #999;
+}
+.remark .remarkImg img{
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+}
+.remark .remarkImg .itemName{
+    color: rgb(62, 94, 163);
+}
+.remark .remarkImg .itemName:hover{
+    color: #db4848;
+}
+.remarkDetail{
+    float: left;
+    margin: 0 20px;
+}
+.remarkDetail .likes{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.remarkDetail .likes div{
+    float: left;
+    margin-left: 20px;
+}
+.remarkDetail .likes img{
+    width: 24px;
+}
+.remarkBg{
+    margin: 0 20px;
+    /* width: 600px; */
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(235, 242, 255);
+}
+.remarkBg .remarkBtn{
+    overflow: hidden;
+    padding: 0 10px;
+}
+.remarkBg .remarkBtn .file{
+    float: left;
+}
+.remarkBg .remarkBtn .limit{
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+.remarkArea{
+    position: relative;
+}
+#wordCheck{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+textarea{
+    color: #999;
+}
+.file{
+    position: relative;
+    width: 200px;
+    height: 30px;
+}
+.file input{
+    position: absolute;
+    top:5px;
+    left: 0;
+    z-index: 2;
+    width: 80px;
+    height: 20px;
+    opacity: 0;
+}
+.file div{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 80px;
+    height: 20px;
+    padding: 5px 0;
+    background-color: #db4848;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.file span{
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    font-size: 14px;
+}
+.statTxt{
+    float: left;
+    width: 140px;
+    font-size: 14px;
+    color: #666;
+}
+.statTxt li{
+    margin: 14px;
+}
+/* 星星评分 */
+.stars{
+    padding-left: 0;
+    overflow: hidden;
+}
+.stars li {
+    float: left;
+    list-style: none;
+    width: 27px;
+    height: 27px;
+    background: url('../../assesets/imgs/star.gif');
+}
+.stars li a {
+    display: block;
+    width: 100%;
+    padding-top: 27px;
+    overflow: hidden;
+}
+.stars li.light {
+    background-position: 0 -29px;
+}
+.remarkBottom{
+    overflow: hidden;
+    margin: 20px auto;
+}
+.remarkBottom .title{
+    float: left;
+    font-size: 16px;
+    color: #666;
+    padding: 20px 50px;
+}
+.remarkBottom .starLevel{
+    float: left;
+    padding: 14px;
+}
+.submitRemark input{
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgb(89, 127, 253);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.submitRemark{
+    width: 200px;
+    margin: 20px auto;
+    
+}

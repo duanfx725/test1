@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+ul,li{
+    list-style: none;
+}
+/* header begin */
+.header{
+    padding: 16px 0;
+    line-height: 58px;
+    box-shadow: 0 2px 2px 2px rgb(235, 235, 235);
+}
+.icon-container{
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+.welcome-signIn{
+    margin-left: 20px;
+    color: #333;
+    font-size: 24px;
+}
+.register-tip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    float: right;
+    font-size: 16px;
+}
+.register-tip span{
+    color: #999;
+}
+.register-tip a{
+    color: #db4848;
+}
+.register-tip a:hover{
+    color: #c03e3e;
+    text-decoration: underline;
+}
+/* header end */
+.container{
+    overflow: hidden;
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(223, 223, 223);
+    color: #333;
+}
+.QRCode{
+    float: left;
+    width: 400px;
+}
+.QRCodeHeader{
+    margin: 15px auto;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.QRCodeHeader span{
+    cursor: pointer;
+}
+.QRCodeHeader span:hover{
+    color: #db4848;
+}
+.checked{
+    color: #db4848;
+}
+.codeRegister{
+    margin-right: 60px;
+}
+.QRCodeContainer .codeImg{
+    margin: 30px auto;
+    width: 160px;
+}
+.QRCodeContainer{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.QRCodeContainer .webName{
+    color: #db4848;
+    cursor: pointer;
+}
+.QRCodeContainer .webName:hover{
+    text-decoration: underline;
+}
+.QRCodeContainer ul{
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+}
+.QRCodeContainer li{
+    float: left;
+    margin: 20px 10px;
+    color: #999;
+}
+.QRCodeContainer li img{
+    width: 30px;
+    vertical-align: middle;
+}
+.QRCodeFooter li{
+    float: left;
+    padding: 0 30px;
+    color: #999;
+    cursor: pointer;
+}
+.QRCodeFooter li img{
+    width: 26px;
+    vertical-align: middle;
+}
+.QRCodeFooter .left{
+    border-right: rgb(211, 211, 211) 1px solid;
+}
+.QRCodeFooter li span{
+    font-size: 12px;
+    color: #999;
+}
+.userName{
+    float: left;
+    width: 400px;
+    margin-right: -400px;
+}
+.userName .userNameContainer{
+    margin: 50px 0;
+}
+.userName .userNameContainer img{
+    height: 40px;
+    border-right: rgb(206, 206, 206) solid 1px;
+    background-color: rgb(233, 233, 233);
+    vertical-align: middle;
+}
+
+.userName .userNameContainer .input{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin: 20px auto;
+    border: 1px solid rgb(206, 206, 206);
+}
+.userName .userNameContainer .input input{
+    height: 40px;
+    width: 200px;
+}
+.userName .forgetPassword{
+    margin-right: 50px;
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+.userName .forgetPassword:hover {
+    color: #db4848;
+}
+.userName #signInBtn{
+    width: 300px;
+    height: 30px;
+    margin: 30px auto;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #db4848;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+#reJudgement{
+    position: absolute;
+    bottom: 10px;
+    right: -50px;
+    font-size: 12px;
+    color: red;
+}

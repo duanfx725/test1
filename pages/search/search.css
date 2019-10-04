@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    position: relative;
+    background-color: #f2f2f2;
+}
+.clear{
+    clear: both;
+}
+/* headerNav begin */
+#headerNav{
+    padding: 0px 80px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+
+#headerNavLeft{
+    float: left;
+}
+#headerNav .nav{
+    position: relative;
+    float: left;
+    /* margin-left: 20px; */
+    padding: 6px 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+#headerNav #headerNavRight .nav:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover  .navTitle{
+    color: #db4848;
+}
+#headerNavRight{
+    float: right;
+}
+#headerNav .arrowImg{
+    width: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+#headerNav .shopCartIcon{
+    width: 20px;
+    vertical-align: middle;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.subNav li{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.subNav li:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover .subNav{
+    display: block;
+}
+.shopCart{
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: #fff;
+}
+.shopCart .title{
+    display: block;
+    margin: 14px 10px;
+    font-weight: bold;
+    color: #333;
+}
+.shopCart ul .img{
+    float: left;
+    vertical-align: middle;
+}
+.shopCart ul .txt{
+    float: left;
+}
+.shopCart ul .txt div{
+    margin: 5px;
+}
+.shopCart ul .txt a{
+    color: rgb(78, 78, 78);
+}
+.shopCart ul .txt .money{
+    float: right;
+    color: #db4848;
+}
+.shopCart ul{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    
+}
+.shopCart ul li{
+    background-color: #fff;
+}
+.shopCart ul .delete{
+    float: right;
+    color: #333;
+}
+.shopCart ul .delete:hover{
+    color: #db4848;
+}
+#checkShopCart{
+    float: right;
+    background-color: #db4848;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* header begin */
+.header{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 0 0;
+    z-index: 1; 
+}
+.headerContainer{
+    width: 1000px;
+    margin: 0 auto;
+}
+.headerContainer .logo{
+    float: left;
+}
+.searchContainer{
+    float: right;
+    margin-top: 26px;
+}
+.headerContainer .searchBox{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    border: 2px solid #db4848;
+    border-radius: 10px;
+}
+.headerContainer .searchBox input{
+    width: 500px;
+}
+.headerContainer .searchTip span{
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.headerContainer .searchTip span:hover{
+    color: #db4848;
+}
+.headerContainer .searchBox{
+    margin-top: 6px;
+    height: 30px;
+    line-height: 30px;
+}
+.searchBox button{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #db4848;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #db4848;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.searchBox img{
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    margin-top: -8.5px;
+    cursor: pointer;
+}
+/* nav begin */
+.goodsNav{
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #db4848;
+    background-color: #fff;
+}
+.goodsNav .goodsSubNav{
+    width: 200px;
+    height: 30px;
+    margin-left: 100px;
+    background-color: #db4848;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+/* container begin */
+.container{
+    width: 1200;
+    margin: 0 auto;
+    padding: 20px 100px;
+    background-color: #fff;
+}
+.searchResult{
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+.container .searchClassify{
+    position: relative;
+}
+.container .subClassify{
+    /* overflow: hidden; */
+    width: 100%;
+    border-top: 1px solid rgb(211, 211, 211);
+    font-size: 14px;
+}
+.container .subClassify .key{
+    float: left;
+    width: 100px;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    background-color: rgb(236, 236, 236);
+    color: #666;
+    font-weight: bold;
+}
+.container .subClassify .value{
+    float: left;
+    margin: 10px 20px;
+}
+.container .subClassify .value li{
+    float: left;
+    width: 150px;
+}
+.container .subClassify a{
+    color: rgb(67, 96, 133);
+}
+.container .subClassify .btn{
+    float: right;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+    border: 1px solid #999;
+}
+.container .subClassify .btn img{
+    width: 10px;
+    vertical-align: middle;
+}
+.container .subClassify .value img{
+    width: 10px;
+    vertical-align: middle;
+}
+.container .vipClassify{
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+.container .vipClassify .value a{
+    /* position: relative; */
+    display: block;
+    float: left;
+    padding: 2px;
+    margin-right: 80px;
+    background-color: #fff;
+    border: 1px solid rgb(211, 211, 211);
+    /* z-index: 2; */
+}
+.vipClassifyHover{
+    display: none;
+    position: absolute;
+    bottom: -34px;
+    left: 0;
+    width: 1200px;
+    height: 30px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+    /* z-index: 0; */
+}
+.vipClassifyHover span{
+    margin-left: 50px;
+}
+.vipClassify a:hover{
+    border: 1px solid #333;
+    border-bottom: none;
+}
+/* result wrap begin */
+.resultWrap{
+    background-color: #fff;
+    width: 1230px;
+    margin: 10px auto;
+}
+.goodsClassify{
+    background-color: rgb(240, 240, 240);
+    padding: 10px 20px;
+}
+.goodsSort{
+    float: left;
+}
+.goodsSort img{
+    width: 10px;
+    vertical-align: middle;
+}
+.goodsSort a{
+    display: block;
+    float: left;
+    background-color: #fff;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 5px 10px;
+    margin-left: -1px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+.goodsSort a:hover{
+    position: relative;
+    border: 1px solid #db4848;
+    color: #db4848;
+}
+.goodsSort .checked:hover{
+    color: #fff;
+}
+.goodsSort .checked{
+    background-color: #db4848;
+    color: #fff;
+}
+#searchInResult{
+    width: 130px;
+    height: 24px;
+    background-color: #fff;
+}
+.goodsSum{
+    float: right;
+}
+.goodsSum input{
+    float: left;
+    border: 1px solid #999;
+}
+.sum{
+    float: right;
+    margin-left: 30px;
+    color: #666;
+    font-size: 14px;
+}
+.goodsSumTxt{
+    margin-right: 10px;
+}
+.goodsSum .sum .number{
+    color: #db4848;
+    font-weight: bold;
+}
+#searchInResultBtn{
+    padding: 3px 8px;
+    margin-left: -1px;
+    background-color: rgb(209, 209, 209);
+    color: #666;
+}
+/* goods Exhibition */
+.goodsWrap{
+    width: 100%;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+.goods{
+    overflow: hidden;
+    /* background-color: rgb(255, 255, 255); */
+    margin-bottom:20px;	 
+    border: 1px solid #fff;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    height: 413px;
+    cursor: pointer;
+}
+.goods .goodsImg{
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    /* z-index: -1; */
+}
+.goods .goodsIntroduce{
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+}
+.goods .goodsIntroduce div{
+    margin: 6px 0;
+}
+.goods .price{
+    font-size: 18px;
+    color: #db4848;
+    font-weight: bold;
+}
+.goods .goodsName{
+    font-size: 12px;
+    color: #666;
+}
+.goods .discussion{
+    border-bottom: rgb(235, 235, 235) 1px solid;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.goods .discussion span{
+    color: #dd7777;
+    font-weight: bold;
+}
+.goods .storeName{
+    position: relative;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.goods .shoppingCartBtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.goods:hover{
+    border: 1px solid #db4848;
+}
+.goodsMask{
+    /* transition: bottom 0.5s; */
+    transition: height 0.2s;
+    position: absolute;
+    /* bottom: -50px; */
+    bottom: 125px;
+    left: 0;
+    width: 296px;
+    height: 0px;
+    /* height: 40px; */
+    background-color: rgba(255, 144, 144, 0.8);
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    opacity: 0;
+    /* z-index: -2; */
+}
+.goodsMask span{
+    display: block;
+    float: left;
+    width: 144px;
+    text-align: center;
+}
+.goodsMask .bar{
+    width: 0;
+    height: 100%;
+    border-left: 1px solid rgb(255, 255, 255,0.5);
+}
+.goods:hover .goodsMask{
+    /* bottom:125px; */
+    height: 40px;
+    opacity: 1;
+}
+.pages{
+    overflow: hidden;
+    width: 500px;
+    margin: 50px auto;
+}
+.pages li{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+.pages li a{
+    color: #666;
+}
+.pages .checked a{
+    color: #fff;
+}
+.pages .checked{
+    background-color: #db4848;
+}
+.pages .num{
+    background-color: #fff;
+}
+.pages .num:hover{
+    background-color: #db4848;
+}
+.pages .num:hover a{
+    color: #fff;
+}

@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+select{
+    outline: none;
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+    background: url("arrow.png") no-repeat scroll right center transparent;
+    padding-right: 14px;
+    color: #666
+}
+option{
+    outline: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+    color: #666;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    position: relative;
+    background-color: #fff;
+}
+.clear{
+    clear: both;
+}
+/* headerNav begin */
+#headerNav{
+    padding: 0px 80px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+
+#headerNavLeft{
+    float: left;
+}
+#headerNav .nav{
+    position: relative;
+    float: left;
+    /* margin-left: 20px; */
+    padding: 6px 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+#headerNav #headerNavRight .nav:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover  .navTitle{
+    color: #db4848;
+}
+#headerNavRight{
+    float: right;
+}
+#headerNav .arrowImg{
+    width: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+#headerNav .shopCartIcon{
+    width: 20px;
+    vertical-align: middle;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.subNav li{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.subNav li:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover .subNav{
+    display: block;
+}
+.shopCart{
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: #fff;
+}
+.shopCart .title{
+    display: block;
+    margin: 14px 10px;
+    font-weight: bold;
+    color: #333;
+}
+.shopCart ul .img{
+    float: left;
+    vertical-align: middle;
+}
+.shopCart ul .txt{
+    float: left;
+}
+.shopCart ul .txt div{
+    margin: 5px;
+}
+.shopCart ul .txt a{
+    color: rgb(78, 78, 78);
+}
+.shopCart ul .txt .money{
+    float: right;
+    color: #db4848;
+}
+.shopCart ul{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    
+}
+.shopCart ul li{
+    background-color: #fff;
+}
+.shopCart ul .delete{
+    float: right;
+    color: #333;
+}
+.shopCart ul .delete:hover{
+    color: #db4848;
+}
+#checkShopCart{
+    float: right;
+    background-color: #db4848;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* secNav begin */
+.secNav{
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    background-color: #db4848;
+}
+.secNav .left{
+     float: left;
+     margin-top: 10px;
+     margin-left: 100px;
+}
+.secNav .left div{
+    float: left;
+}
+.secNav .left span{
+    display: block;
+    float: left;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+.secNav img{
+    width: 130px;
+}
+.secNav .right{
+    float: right;
+}
+.secNav .right{
+    margin: 20px 100px;
+    background-color: #fff;
+}
+.secNav .right input{
+    vertical-align: middle;
+    float: left;
+}
+.secNav .search1{
+    width: 250px;
+    height: 24px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.secNav .search2{
+    width: 40px;
+    height: 24px;
+    border: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+/* container begin */
+.container{
+    overflow: hidden;
+    width: 1000px;
+    margin: 20px auto;
+}
+.sideNav{
+    float: left;
+    width: 150px;
+    padding: 20px;
+}
+.sideNav span{
+    font-size: 16px;
+    color: #db4848;
+}
+.sideNav li{
+    margin: 20px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.sideNav li a{
+    color: #333;
+}
+.sideNav li a:hover{
+    color: #db4848;
+}
+.sideNav li:hover{
+    color: #db4848;
+}
+.sideNav .checked{
+    color: #db4848;
+}
+.mainContainer{
+    float: left;
+    width: 760px;
+}
+.navBar{
+    overflow: hidden;
+    height: 50px;
+    border-bottom: 3px solid rgb(224, 224, 224);
+}
+.navBar li{
+    float: left;
+    width: 80px;
+    margin-left: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navBar li:hover{
+    color: #db4848;
+}
+.navBar .checked{
+    color: #db4848;
+}
+.navBar li span{
+    color: #db4848;
+}
+.infoBar{
+    font-size: 12px;
+    color: #333;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgba(235, 235, 235, 0.678);
+}
+.infoBar li{
+    float: left;
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 40px;
+}
+.infoBar .item{
+    width: 240px;
+}
+.itemDetail{
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+}
+.dealTime{
+    overflow: hidden;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    background-color: rgb(212, 212, 212);
+}
+.dealTime .time{
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+.dealTime .seller{
+    float: left;
+    margin-left: 50px;
+}
+.dealTime .deleteBtn{
+    float: right;
+    margin-right: 10px;
+}
+.dealTime .deleteBtn img{
+    width: 20px;
+}
+.itemInfo ul{
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid rgb(196, 196, 196);
+}
+.itemInfo ul li{
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+.itemInfo .checkBox{
+    width: 20px;
+}
+.itemInfo .message{
+    width: 250px;
+}
+.itemInfo .message .messageTxt{
+    width: 100px;
+    font-size: 12px;
+    color: #999;
+}
+.itemInfo .message img{
+    width: 100px;
+}
+.itemInfo .message div{
+    float: left;
+}
+.itemTitle{
+    color: #333;
+}
+.itemInfo .unitPrice{
+    margin: 0 8px;
+    width: 80px;
+    font-size: 12px;
+}
+.itemInfo .beforePrice{
+    text-decoration: line-through;
+}
+.itemInfo .nowPrice{
+    color: #333;
+    margin-top: 5px;
+}
+.itemInfo .countBtn{
+    padding: 0 20px;
+}
+.itemInfo .countBtn input{
+    float: left;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(231, 231, 231);
+}
+.itemInfo .countBtn .count{
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 1px solid rgb(231, 231, 231);
+    text-align: center;
+}
+.itemInfo .subSum{
+    width: 80px;
+    text-align: center;
+    margin: 0 5px;
+    color: #db4848;
+}
+.itemInfo .controlBtn{
+    float: right;
+    text-align: left;
+    margin-left: 10px;
+}
+.itemInfo .controlBtn input{
+    display: block;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+}
+.itemInfo .operate{
+    margin-left: 40px;
+}
+.itemInfo .operate div:hover{
+    color: #db4848;
+    cursor: pointer;
+}
+.sumPrise span{
+    margin-left: 25px;
+    font-weight: bold;
+    color: #333;
+}
+.dealType{
+    margin-left: 30px;
+    padding: 10px;
+    border: 1px dotted rgb(231, 231, 231);
+}
+.dealType div{
+    margin: 5px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.dealType div:hover{
+    color: #db4848;
+}
+.remarkBtn a{
+    display: block;
+    padding: 5px 10px;
+    margin: 25px 0 0 22px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    color: #333;
+}
+.remarkBtn a:hover{
+    color: #db4848;
+    border-color: #db4848;
+}

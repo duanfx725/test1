@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+select{
+    outline: none;
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+    background: url("arrow.png") no-repeat scroll right center transparent;
+    padding-right: 14px;
+    color: #666
+}
+option{
+    outline: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+    color: #666;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    position: relative;
+    background-color: #fff;
+}
+.clear{
+    clear: both;
+}
+/* headerNav begin */
+#headerNav{
+    padding: 0px 80px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+
+#headerNavLeft{
+    float: left;
+}
+#headerNav .nav{
+    position: relative;
+    float: left;
+    /* margin-left: 20px; */
+    padding: 6px 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+#headerNav #headerNavRight .nav:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover  .navTitle{
+    color: #db4848;
+}
+#headerNavRight{
+    float: right;
+}
+#headerNav .arrowImg{
+    width: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+#headerNav .shopCartIcon{
+    width: 20px;
+    vertical-align: middle;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.subNav li{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.subNav li:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover .subNav{
+    display: block;
+}
+.shopCart{
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: #fff;
+}
+.shopCart .title{
+    display: block;
+    margin: 14px 10px;
+    font-weight: bold;
+    color: #333;
+}
+.shopCart ul .img{
+    float: left;
+    vertical-align: middle;
+}
+.shopCart ul .txt{
+    float: left;
+}
+.shopCart ul .txt div{
+    margin: 5px;
+}
+.shopCart ul .txt a{
+    color: rgb(78, 78, 78);
+}
+.shopCart ul .txt .money{
+    float: right;
+    color: #db4848;
+}
+.shopCart ul{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    
+}
+.shopCart ul li{
+    background-color: #fff;
+}
+.shopCart ul .delete{
+    float: right;
+    color: #333;
+}
+.shopCart ul .delete:hover{
+    color: #db4848;
+}
+#checkShopCart{
+    float: right;
+    background-color: #db4848;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* header begin */
+.header{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 0 0;
+    z-index: 1; 
+}
+.headerContainer{
+    width: 1000px;
+    margin: 0 auto;
+}
+.headerContainer .logo{
+    float: left;
+}
+.searchContainer{
+    float: right;
+    margin-top: 26px;
+}
+.headerContainer .searchBox{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    border: 2px solid #db4848;
+    border-radius: 10px;
+}
+.headerContainer .searchBox input{
+    width: 500px;
+}
+.headerContainer .searchTip span{
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.headerContainer .searchTip span:hover{
+    color: #db4848;
+}
+.headerContainer .searchBox{
+    margin-top: 6px;
+    height: 30px;
+    line-height: 30px;
+}
+.searchBox button{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #db4848;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #db4848;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.searchBox img{
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    margin-top: -8.5px;
+    cursor: pointer;
+}
+/* nav begin */
+.goodsNav{
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #db4848;
+    background-color: #fff;
+}
+.goodsNav .goodsSubNav{
+    width: 200px;
+    height: 30px;
+    margin-left: 100px;
+    background-color: #db4848;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+/* container begin */
+.itemDetail{
+    margin: 20px auto;
+    width: 1200px;
+} 
+.itemImg{
+    float: left;
+}
+.itemImg .bigImg{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #db4848;
+}
+.bigImg video{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -200px ;
+}
+.itemImg .smallImg .video{
+    position: relative;
+}
+.itemImg .smallImg .video .sVideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.itemImg .bigImg img{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+.showImg{
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+.itemImg .smallImg{
+    overflow: hidden;
+    width: 380px;
+    margin: 20px auto;
+}
+.itemImg .smallImg li{
+    overflow: hidden;
+    float: left;
+    width: 54px;
+    height: 54px;
+    margin-right: 20px;
+    border: 1px solid white;
+}
+#picLiVideo{
+    border-color: #db4848;
+}
+/* .checked{
+    border: 1px solid #df6262;
+} */
+.itemImg .smallImg li .pic img{
+    width: 54px;
+}
+/* Magnifier begin */
+#mask{
+    width:175px;
+    height: 175px;
+    background:rgba(255,255,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    cursor:move;
+}
+#big_box{
+    width: 400px;
+    height: 400px;
+    position:absolute;
+    top:0;
+    left:360px;
+    border: 1px solid #000;
+    overflow:hidden;
+    display:none;
+}
+#big_box img{
+    position:absolute;
+    top:0;
+    left:0;
+}
+/* Magnifier end */
+#collectStar{
+    margin: 10px;
+    font-size: 12px;
+}
+#collectStar img{
+    vertical-align: middle;
+}
+#collectStar a{
+    color: #999;
+}
+.itemInfo{
+    float: left;
+    width: 500px;
+    margin: 0 30px;
+}
+.itemInfo .itemName{
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+.originalPrice{
+    overflow: hidden;
+    padding: 10px 10px 0;
+    background-color: rgb(255, 228, 228);
+}
+.originalPrice .line1{
+    float: left;
+}
+.originalPrice .liner{
+    float: right;
+}
+.info{
+    margin-right: 30px;
+    width: 50px;
+    font-size: 12px;
+    color: #999;
+}
+.originalPriceNum{
+    margin:0 20px ;
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #666;
+}
+.itemInfo .originalPrice .liner .right{
+    float: right;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #999;
+}
+.itemInfo .originalPrice .liner .bar{
+    float: right;
+    width: 0;
+    height: 50px;
+    border-left: 1px solid rgb(255, 205, 205);
+    margin: 0 10px;
+}
+.itemInfo .originalPrice .liner .right .num{
+    color: #666;
+    font-size: 20px;
+}
+.itemInfo .originalPrice .liner .right .txt{
+    font-size: 12px;
+}
+.presentPrice{
+    overflow: hidden;
+    padding: 0 10px 10px;
+    background-color: rgb(255, 228, 228);
+}
+.presentPrice div{
+    float: left;
+    line-height: 30px;
+}
+.presentPrice .num{
+    font-size: 30px;
+    color: #df6262;
+}
+.address{
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgb(255, 247, 247);
+}
+.address div{
+    float: left;
+}
+.address span{
+    font-size: 12px;
+    color: #999;
+}
+.address select{
+    text-align: center;
+}
+.itemAmount{
+    overflow: hidden;
+    margin: 10px;
+}
+.itemAmount div{
+    float: left;
+}
+.itemAmount input{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgb(231, 231, 231);
+    color: #666;
+} 
+.itemAmount #count{
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(231, 231, 231);
+}
+#judge{
+    font-size: 12px;
+    color: #db4848;
+    margin-left: 10px;
+}
+.shopBtn{
+    margin: 10px 80px;
+}
+.shopBtn a{
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.shopBtn #toShopCartBtn a{
+    color: #db4848;
+}
+.shopBtn #buyNowBtn a{
+    color: #fff;
+}
+.shopBtn div{
+    float: left;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #db4848;
+    font-size: 16px;
+}
+#buyNowBtn{
+    background-color: #db4848;
+    color: #fff;
+    margin-left: 30px;
+}
+.promise{
+    overflow: hidden;
+    margin: 10px;
+    color: #999;
+    font-size: 12px;
+}
+.promise div{
+    float: left;
+}
+.promise img{
+    margin: 0 5px 0 30px;
+    vertical-align: middle;
+}
+.promise span{
+    margin-right: 30px;
+}
+.buyerInfo{
+    margin: 10px;
+}
+/* goodsDetail begin */
+.navigation{
+    width: 1000px;
+    height: 40px;
+    margin: 2px auto;
+    background-color: rgb(241, 241, 241);
+}
+.navigation div{
+    float: left;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #db4848; 
+    border-top: 2px solid rgb(241, 241, 241);
+    cursor: pointer;
+}
+.navigation .check{
+    background-color: #fff;
+    border-top: 2px solid #db4848;
+}
+.navigation div:hover{
+    background-color: #fff;
+    border-top: 2px solid #db4848;
+}
+#goodsDetail{
+    position: relative;
+    width: 1000px;
+    margin: 2px auto;
+    overflow: hidden;
+    display: block;
+}
+.detailImg{
+    float: left;
+    width: 700px;
+}
+.detailImg img{
+    width: 100%;
+}
+#detailList{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 140px;
+    height: 100%;
+    padding: 30px 10px;
+    border-radius: 20px;
+    background-color: rgba(245, 239, 239, 0.7);
+    display: none;
+}
+#detailList a{
+    display: block;
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0; 
+    cursor: pointer;
+}
+#detailList a:hover{
+    color: #db4848;
+}
+#markDetail{
+    width: 1000px;
+    margin: 0 auto 100px auto;
+    display: block;
+}
+.choose{
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 1px solid rgb(238, 238, 238);
+    font-size: 12px;
+    color: #666;
+}
+.choose input{
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.choose form span{
+    margin-left: 3px;
+}
+.markTxt li{
+    overflow: hidden;
+    width: 1000px;;
+    border: 1px solid rgb(238, 238, 238);
+}
+.markTxt .remarkUser{
+    float: left;
+    width: 80px;
+    margin: 0 20px;
+    font-size: 12px;
+    color: #666;
+}
+.markTxt .remarkUser img{
+    width: 60px;
+    margin: 20px 0;
+}
+.markTxt .remarkTxt{
+    padding: 10px;
+}
+.markTxt .remarkTxt .remark{
+    font-size: 14px;
+    color: #666;
+    margin: 0 10px;
+}
+.markTxt .remarkTxt .remarkImg{
+    overflow: hidden;
+    margin: 20px 0;
+}
+.markTxt .remarkTxt .remarkImg div{
+    float: left;
+    margin: 0 10px;
+    border: 1px solid rgb(241, 241, 241);
+}
+.markTxt .remarkTxt .remarkImg img{
+    width: 30px;
+}
+.markTxt .remarkTxt .time{
+    /* width: 1000px; */
+    font-size: 12px;
+    color: #999;
+    display: none;
+}
+#details{
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+}
+

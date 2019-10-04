@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>已买到的宝贝</title>
+    <link rel="stylesheet" href="./buyerOrder.css" type="text/css">
+    <script type="text/javascript" src="./buyerOrder.js"></script>
+
+</head>
+<body>
+    <form action="" method="POST" name="" enctype="multipart/form-data">
+    <!-- headerNav begin -->
+    <div id="headerNav">
+        <ul id="headerNavLeft">
+            <li class="nav" id="username">
+                <span>牛奶草莓</span>
+                <ul class="subNav">
+                    <li>账号管理</li>
+                    <li id="signOut">退出登录</li>
+                </ul>
+            </li>
+            <li class="nav">我的订单</li>
+        </ul>
+        <ul id="headerNavRight">
+            <li class="nav">
+                <span class="navTitle">我的主页</span>
+                <img class="arrowImg"  src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>已买到的宝贝</li>
+                    <li>我的足迹</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <img class="shopCartIcon" src="../../assesets/imgs/shoppingCart.png">
+                <span class="navTitle">购物车</span> 
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <div class="shopCart subNav">
+                    <span class="title">最近加入的宝贝：</span>
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <img src="../../assesets/imgs/goods7.png" width="40px">
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <a href="#" title="AiChef 法式西点钻石心慕斯模具蛋糕立体心形爱心硅胶烘焙巧克力">
+                                        <span>AiChef 法式西点钻石心慕斯...</span>    
+                                    </a>
+                                    <span class="money">￥185</span>
+                                </div>
+                                <div>
+                                    <span class="type">颜色分类:7寸升级版钻石心[更立体]</span>
+                                    <span class="delete">删除</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="button" name="" id="checkShopCart" value="查看我的购物车">
+                </div>
+            </li>
+            <li class="nav">
+                <span class="navTitle">收藏夹</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>收藏的宝贝</li>
+                    <li>收藏的店铺</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">卖家中心</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>卖家服务中心</li>
+                    <li>卖家培训中心</li>
+                    <li>体验中心</li>
+                    <li>问商友</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">联系客服</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>消费者客服</li>
+                    <li>卖家客服</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="secNav">
+        <div class="left">
+            <div>
+                <img src="../../assesets/imgs/logo2.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <input class="search1" type="text" name="" placeholder=" 输入商品标签或订单号进行搜索">
+            <input class="search2" type="bottom" value="搜索" name="">
+        </div>
+    </div>
+    <!-- container begin -->
+    <div class="container">
+        <div class="sideNav">
+            <span>
+                全部功能
+            </span>
+            <ul>
+                <li>
+                    <a href="../shopCart/shopCart.html">我的购物车</a>    
+                </li>
+                <li class="checked">已买到的宝贝</li>
+                <li>
+                    <a href="../collector/collector.html">我的收藏</a>
+                </li>
+                <li>评价管理</li>
+                <li>退款维权</li>
+                <li>我的足迹</li>
+            </ul>
+        </div>
+        <div class="mainContainer">
+            <div class="navBar">
+                <ul>
+                    <li class="checked">所有订单</li>
+                    <li>待付款</li>
+                    <li>待发货</li>
+                    <li>待收货</li>
+                    <li>待评价<span>3</span></li>
+                </ul>
+            </div>
+            <div class="infoBar">
+                <ul>
+                    <li class="item">宝贝</li>
+                    <li class="price">单价</li>
+                    <li class="count">数量</li>
+                    <li class="do">商品操作</li>
+                    <li class="sum">实付款</li>
+                    <li class="state">交易状态</li>
+                    <li class="deal">交易操作</li>
+                </ul>
+            </div>
+            <div class="itemDetail">
+                <div class="dealTime">
+                    <div class="time">
+                        <span>2019-07-15 </span>
+                        <span> 订单号：000</span>
+                    </div>
+                    <div class="seller">pig**ge</div>
+                    <div class="deleteBtn">
+                        <img src="../../assesets/imgs/delete2.png" alt="">
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <ul>
+                        <li class="checkBox">
+                            <input class="takeIt store1" type="checkbox" name="">
+                        </li>
+                        <li class="message">
+                            <div>
+                                <img src="../../assesets/imgs/detail1.PNG" alt="">
+                            </div>
+                            <div class="messageTxt">
+                                <span class="itemTitle">【赠视频+期末测试】星火高等数学 同济七版上册高数辅导 考研数学教</span><br>
+                                <span>颜色分类：二手八成新第七版</span>
+                            </div>
+                        </li>
+                        <li class="unitPrice">
+                            <div class="beforePrice">￥34.80</div>
+                            <div>￥
+                                <span class="nowPrice">20.00</span>
+                            </div>
+                        </li>
+                        <li>1</li>
+                        <li class="operate">
+                            <div>申请售后</div>
+                            <div>投诉卖家</div>
+                        </li>
+                        <li class="sumPrise">
+                            <span>￥19.99</span>
+                        </li>
+                        <li class="dealType">
+                            <div>交易成功</div>
+                            <div>订单详情</div>
+                            <div>查看物流</div>
+                            <div>对方已评</div>
+                        </li>
+                        <li class="remarkBtn">
+                            <a href="#">评价</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemDetail">
+                <div class="dealTime">
+                    <div class="time">
+                        <span>2019-07-15 </span>
+                        <span> 订单号：000</span>
+                    </div>
+                    <div class="seller">pig**ge</div>
+                    <div class="deleteBtn">
+                        <img src="../../assesets/imgs/delete2.png" alt="">
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <ul>
+                        <li class="checkBox">
+                            <input class="takeIt store1" type="checkbox" name="">
+                        </li>
+                        <li class="message">
+                            <div>
+                                <img src="../../assesets/imgs/detail1.PNG" alt="">
+                            </div>
+                            <div class="messageTxt">
+                                <span class="itemTitle">【赠视频+期末测试】星火高等数学 同济七版上册高数辅导 考研数学教</span><br>
+                                <span>颜色分类：二手八成新第七版</span>
+                            </div>
+                        </li>
+                        <li class="unitPrice">
+                            <div class="beforePrice">￥34.80</div>
+                            <div>￥
+                                <span class="nowPrice">20.00</span>
+                            </div>
+                        </li>
+                        <li>1</li>
+                        <li class="operate">
+                            <div>申请售后</div>
+                            <div>投诉卖家</div>
+                        </li>
+                        <li class="sumPrise">
+                            <span>￥19.99</span>
+                        </li>
+                        <li class="dealType">
+                            <div>交易成功</div>
+                            <div>订单详情</div>
+                            <div>查看物流</div>
+                            <div>对方已评</div>
+                        </li>
+                        <li class="remarkBtn">
+                            <a href="#">评价</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

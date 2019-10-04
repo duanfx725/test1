@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎登录</title>
+    <link rel="stylesheet" type="text/css" href="./signIn.css">
+    <script type="text/javascript" src="./signIn.js"></script>
+</head>
+<body>
+    <!--header begin-->
+    <div class="header">
+        <div class="icon-container">
+            <a href="#">
+                <img src="../../assesets/imgs/logo.png" width="150px">
+            </a>
+            <span class="welcome-signIn">
+                欢迎登录
+            </span>
+            <div class="register-tip">
+                <a href="../register/register.html">立即注册 ></a>
+            </div>
+        </div>
+    </div>
+    <!--header end-->
+    <div class="container">
+        <div class="QRCode" id="QRCodeBox">
+            <div class="QRCodeHeader">
+                <span class="checked codeRegister">扫码登录</span>
+                <span id="userNameHead">账号登录</span>
+            </div>
+            <div class="QRCodeContainer">
+                <div class="codeImg">
+                    <img src="../../assesets/imgs/QRcode.jpg" alt="二维码" width="160px">
+                </div>
+                <p>打开手机<span class="webName">东师接力</span> 扫描二维码</p>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="../../assesets/imgs/picture01.jpg">
+                            <span>免输入</span>
+                        </li>
+                        <li>
+                            <img src="../../assesets/imgs/picture02.jpg">
+                            <span>更快</span>
+                        </li>
+                        <li>
+                            <img src="../../assesets/imgs/picture03.jpg">
+                            <span>更安全</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="QRCodeFooter">
+                <ul>
+                    <li class="left">
+                        <img src="../../assesets/imgs/qq.jpg">
+                        <span>qq</span>
+                    </li>
+                    <li>
+                        <img src="../../assesets/imgs/weixin.jpg">
+                        <span>微信</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="userName" id="userNameBox">
+            <div class="QRCodeHeader">
+                <span id="QRCode" class="codeRegister">扫码登录</span>
+                <span class="checked">账号登录</span>
+            </div>
+            <div class="userNameContainer">
+                <div class="input">
+                    <img src="../../assesets/imgs/username.jpg">
+                    <input id="username" name="" type="text" placeholder="用户名">
+                </div>
+                <div class="input">
+                    <img src="../../assesets/imgs/password.jpg">
+                    <input id="password" name="" type="password" placeholder="密码">
+                    <span id="reJudgement"></span>
+                </div>
+                <div class="forgetPassword"></div>
+                <div id="signInBtn">
+                    <a href="../index/index.html" style="color: #fff">
+                        登&nbsp;&nbsp;&nbsp;&nbsp;录
+                    </a>
+                </div>
+            </div>
+            <div class="QRCodeFooter">
+                <ul>
+                    <li class="left">
+                        <img src="../../assesets/imgs/qq.jpg">
+                        <span>qq</span>
+                    </li>
+                    <li>
+                        <img src="../../assesets/imgs/weixin.jpg">
+                        <span>微信</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品管理</title>
+    <link rel="stylesheet" href="./publish.css" type="text/css">
+    <script type="text/javascript" src="./publish.js"></script>
+</head>
+<body>
+    <form action="" method="POST" name="" enctype="multipart/form-data">
+    <!-- headerNav begin -->
+    <div id="headerNav">
+        <ul id="headerNavLeft">
+            <li class="nav" id="username">
+                <span>牛奶草莓</span>
+                <ul class="subNav">
+                    <li>账号管理</li>
+                    <li id="signOut">退出登录</li>
+                </ul>
+            </li>
+            <li class="nav">我的订单</li>
+        </ul>
+        <ul id="headerNavRight">
+            <li class="nav">
+                <span class="navTitle">我的主页</span>
+            </li>
+            <li class="nav">
+                <span class="navTitle">用户营销</span> 
+            </li>
+            <li class="nav">
+                <span class="navTitle">商家论坛</span>
+            </li>
+            <li class="nav">
+                <span class="navTitle">卖家中心</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>卖家服务中心</li>
+                    <li>卖家培训中心</li>
+                    <li>体验中心</li>
+                    <li>问商友</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">商家客服</span>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="secNav">
+        <div class="left">
+            <div>
+                <img src="../../assesets/imgs/logo2.png" alt="">
+            </div>
+            <span>商家后台</span>
+        </div>
+        <div class="right">
+            <input class="search1" type="text" name="" placeholder=" 输入商品标签或订单号进行搜索">
+            <input class="search2" type="bottom" value="搜索" name="">
+        </div>
+    </div>
+    <!-- container begin -->
+    <div class="container">
+        <div class="row">
+            <span class="subtitle" id="goods_name">商品名称</span>
+            <input class="subtitleInput" type="text">
+        </div>
+        <!-- <div class="row">
+            <span class="subtitle">新旧</span>
+            <div class="newDiv"><input class="newBtn" type="radio" name="new" value="">非全新</div>
+            <div class="newDiv"><input class="newBtn" type="radio" name="new" value="">全新</div>
+            
+        </div> -->
+        <div class="row">
+            <span class="subtitle" id="price">价格</span>
+            <div class="nowPrice">
+                <input id="nowPriseInput" type="text">
+                <span id="yuan1">元</span>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="xPrice">
+                <span id="xPriceTxt">原价</span>
+                <input id="xPriceInput" type="text">
+                <span id="yuan2">元</span>
+            </div>
+        </div> -->
+        <!-- <div class="row">
+            <span class="subtitle">讲价</span>
+            <input id="accept" type="radio" name="bargain">接受
+            <input id="reject" type="radio" name="bargain">拒绝
+        </div> -->
+        <div class="row">
+            <span class="subtitle" id="stock">库存</span>
+            <input type="text">
+        </div>
+        <div class="row imgRow">
+            <span class="subtitle">宝贝图片</span>
+            <img id="addPic" src="../../assesets/imgs/addPic.PNG" alt="">
+            <input type="file" name="" id="fileBtn">
+        </div>
+        <div class="row textArea" id="introduction">
+            <span class="subtitle">宝贝描述</span>
+            <textarea name="" id="" cols="100" rows="10" maxlength="1000">
+1. 使用时长：
+2.新旧程度描述：
+3. 存在的问题：
+4. 到手时间/有效期/适用条件：
+            </textarea>
+            <span id="wordCheck"></span>
+        </div>
+    </div>
+    <div class="publishBtn">
+        <a href="#">即刻发布</a>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+select{
+    outline: none;
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+    background: url("arrow.png") no-repeat scroll right center transparent;
+    padding-right: 14px;
+    color: #666
+}
+option{
+    outline: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+    color: #666;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    position: relative;
+    background-color: #fff;
+}
+.clear{
+    clear: both;
+}
+/* headerNav begin */
+#headerNav{
+    padding: 0px 80px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+
+#headerNavLeft{
+    float: left;
+}
+#headerNav .nav{
+    position: relative;
+    float: left;
+    /* margin-left: 20px; */
+    padding: 6px 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+#headerNav #headerNavRight .nav:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover  .navTitle{
+    color: #db4848;
+}
+#headerNavRight{
+    float: right;
+}
+#headerNav .arrowImg{
+    width: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+#headerNav .shopCartIcon{
+    width: 20px;
+    vertical-align: middle;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.subNav li{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.subNav li:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover .subNav{
+    display: block;
+}
+.shopCart{
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: #fff;
+}
+.shopCart .title{
+    display: block;
+    margin: 14px 10px;
+    font-weight: bold;
+    color: #333;
+}
+.shopCart ul .img{
+    float: left;
+    vertical-align: middle;
+}
+.shopCart ul .txt{
+    float: left;
+}
+.shopCart ul .txt div{
+    margin: 5px;
+}
+.shopCart ul .txt a{
+    color: rgb(78, 78, 78);
+}
+.shopCart ul .txt .money{
+    float: right;
+    color: #db4848;
+}
+.shopCart ul{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    
+}
+.shopCart ul li{
+    background-color: #fff;
+}
+.shopCart ul .delete{
+    float: right;
+    color: #333;
+}
+.shopCart ul .delete:hover{
+    color: #db4848;
+}
+#checkShopCart{
+    float: right;
+    background-color: #db4848;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* header begin */
+.header{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 0 0;
+    z-index: 1; 
+}
+.headerContainer{
+    width: 1000px;
+    margin: 0 auto;
+}
+.headerContainer .logo{
+    float: left;
+}
+.searchContainer{
+    float: right;
+    margin-top: 10px;
+}
+.headerContainer .searchBox{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    border: 2px solid #db4848;
+    border-radius: 10px;
+}
+.headerContainer .searchBox input{
+    width: 500px;
+}
+.headerContainer .searchTip span{
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.headerContainer .searchTip span:hover{
+    color: #db4848;
+}
+.headerContainer .searchBox{
+    margin-top: 6px;
+    height: 30px;
+    line-height: 30px;
+}
+.searchBox button{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #db4848;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #db4848;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.searchBox img{
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    margin-top: -8.5px;
+    cursor: pointer;
+}
+/* container begin */
+.container{
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgb(209, 209, 209);
+}
+.shopCartImg{
+    text-align: center;
+    margin: 10px 0;
+}
+.itemResult{
+    float: right;
+    width: 460px;
+    margin: 20px;
+}
+.itemResult .succeed{
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+}
+.itemResult .succeed img{
+    width: 40px;
+    vertical-align: middle;
+}
+.sum{
+    text-align: right;
+    margin: 120px 0 10px;
+    font-size: 22px;
+    color: #db4848;
+}
+.shopCartSum{
+    text-align: right;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+.shopCartSum span{
+    color: #db4848;
+}
+.btn{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+}
+#returnToDetail{
+    display: block;
+    float: left;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #db4848;
+    background-color: #fff;
+    border: 1px solid #db4848;
+    cursor: pointer;
+} 
+#toShoppingCart{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #db4848;
+    border: 1px solid #db4848;
+    cursor: pointer;
+}

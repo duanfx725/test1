@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品搜索-奶牛接力</title>
+    <link rel="stylesheet" href="./search.css" type="text/css">
+    <script type="text/javascript" src="./search.js"></script>
+</head>
+<body>
+    <!-- headerNav begin -->
+    <div id="headerNav">
+        <ul id="headerNavLeft">
+            <li class="nav" id="username">牛奶草莓</li>
+            <li class="nav">我的订单</li>
+        </ul>
+        <ul id="headerNavRight">
+            <li class="nav">
+                <span class="navTitle">我的主页</span>
+                <img class="arrowImg"  src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>已买到的宝贝</li>
+                    <li>我的足迹</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <img class="shopCartIcon" src="../../assesets/imgs/shoppingCart.png">
+                <span class="navTitle">购物车</span> 
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <div class="shopCart subNav">
+                    <span class="title">最近加入的宝贝：</span>
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <img src="../../assesets/imgs/goods7.png" width="40px">
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <a href="#" title="AiChef 法式西点钻石心慕斯模具蛋糕立体心形爱心硅胶烘焙巧克力">
+                                        <span>AiChef 法式西点钻石心慕斯...</span>    
+                                    </a>
+                                    <span class="money">￥185</span>
+                                </div>
+                                <div>
+                                    <span class="type">颜色分类:7寸升级版钻石心[更立体]</span>
+                                    <span class="delete">删除</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="button" name="" id="checkShopCart" value="查看我的购物车">
+                </div>
+            </li>
+            <li class="nav">
+                <span class="navTitle">收藏夹</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>收藏的宝贝</li>
+                    <li>收藏的店铺</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">卖家中心</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>卖家服务中心</li>
+                    <li>卖家培训中心</li>
+                    <li>体验中心</li>
+                    <li>问商友</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">联系客服</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>消费者客服</li>
+                    <li>卖家客服</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <!-- header begin  -->
+    <div class="header">
+        <div class="headerContainer">
+            <div class="logo">
+                <img src="../../assesets/imgs/logo.png" width="200px">
+            </div>
+            <div class="searchContainer">
+                <div class="searchTip">
+                    <span>高数上下册</span>
+                    <span>电风扇</span>
+                    <span>蕾丝连衣裙</span>
+                    <span>尤克里里</span>
+                    <span>公务员真题</span>
+                    <span>蓝牙耳机</span>
+                </div>
+                <div class="searchBox">
+                    <input id="search" name="" type="text" placeholder="&nbsp;&nbsp;二手教材/生活用品/文具">
+                    <button id="searchBtn">搜索</button>
+                    <img src="../../assesets/imgs/scan.png" width="20px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav begin -->
+    <div class="goodsNav">
+        <div class="goodsSubNav">
+            商品分类
+        </div>
+    </div>
+    <!-- container begin -->
+    <div class="container">
+        <div class="searchResult">
+            <span>全部结果></span>
+            <span class="searchInput">"高数"</span>
+        </div>
+        <div class="searchClassify">
+            <div class="brandClassify subClassify">
+                <div class="bcWrap">
+                    <div class="key">品牌：</div>
+                    <div class="value">
+                        <ul>
+                            <li>
+                                <a href="#">人民邮电出版社</a>
+                            </li>
+                            <li>
+                                <a href="#">人民出版社</a>
+                            </li>
+                            <li>
+                                <a href="#">邮电出版社</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <a href="#">
+                            <span>更多</span>
+                            <img src="../../assesets/imgs/arrow.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="typeClassify subClassify">
+                <div class="tcWrap">
+                    <div class="key">分类：</div>
+                    <div class="value">
+                        <ul>
+                            <li>
+                                <a href="#">科学与自然</a>
+                            </li>
+                            <li>
+                                <a href="#">自然</a>
+                            </li>
+                            <li>
+                                <a href="#">科学</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <a href="#">
+                            <span>更多</span>
+                            <img src="../../assesets/imgs/arrow.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="vipClassify subClassify">
+                <div class="pcWrap">
+                    <div class="key">高级选项：</div>
+                    <div class="value">
+                        <a id="type" href="#">
+                            <span >类型</span>
+                            <img src="../../assesets/imgs/arrow.png">
+                        </a>
+                        <a id="mark" href="#">
+                            <span>客户评分</span>
+                            <img src="../../assesets/imgs/arrow.png">
+                        </a>
+                        <a id="discount" href="#">
+                            <span>折扣</span>
+                            <img src="../../assesets/imgs/arrow.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="vipClassifyHover" id="typeHover">
+                <span>名家</span>
+                <span>教师用书</span>
+                <span>辅导/真题</span>
+            </div>
+            <div class="vipClassifyHover" id="markHover">
+                <span>5星</span>
+                <span>4星以上</span>
+                <span>3星以上</span>
+                <span>2星以上</span>
+                <span>1星以上</span>
+            </div>
+            <div class="vipClassifyHover" id="discountHover">
+                <span>0-3折</span>
+                <span>3-5折</span>
+                <span>5-7折</span>
+                <span>7折以上</span>
+            </div>
+        </div>
+        <div class="resultWrap">
+            <div class="goodsClassify">
+                <div class="goodsSort">
+                    <a class="checked" href="#">
+                        综合
+                        <img src="../../assesets/imgs/arrow1.png">
+                    </a>
+                    <a href="#">
+                        销量
+                        <img src="../../assesets/imgs/arrow2.png">
+                    </a>
+                    <a href="#">
+                        评论数
+                        <img src="../../assesets/imgs/arrow2.png">
+                    </a>
+                    <a href="#">
+                        价格
+                        <img src="../../assesets/imgs/arrow2.png">
+                    </a>
+                </div>
+                <div class="goodsSum">
+                    <input type="text" id="searchInResult" name="" placeholder="在结果中搜索">
+                    <input type="button" id="searchInResultBtn" value="搜索">
+                    <div class="sum">
+                        <span class="goodsSumTxt">共4000+件商品</span>
+                        <span class="number">1</span>
+                        <span>/68</span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="goodsWrap">
+                <a href="../detail/detail.html">
+                    <div class="goods">
+                        <img class="goodsImg" src="../../assesets/imgs/goodsDemo.png">
+                        <div class="goodsIntroduce">
+                            <div class="price">￥70</div>
+                            <div class="goodsName">毕业季清仓 正版《工数笔谈》</div>
+                            <div class="discussion">
+                                <span>40+</span>条评论
+                            </div>
+                            <div class="storeName">
+                                <img src="../../assesets/imgs/store.png" width="16px">
+                                sc****se
+                                <img class="shoppingCartBtn" src="../../assesets/imgs/shoppingCart.png" width="36px">
+                            </div>
+                            <div class="goodsMask">
+                                <span  id="collectGoodsBtn">收藏宝贝</span>
+                                <span class="bar"></span>
+                                <span>找相似</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        <div class="pages">
+            <ul>
+                <li><a href="#">《</a></li>
+                <li class="checked"><a href="#">1</a></li>
+                <li class="num"><a href="#">2</a></li>
+                <li class="num"><a href="#">3</a></li>
+                <li class="num"><a href="#">4</a></li>
+                <li class="num"><a href="#">5</a></li>
+                <li class="num"><a href="#">6</a></li>
+                <li><span>...</span></li>
+                <li class="num"><a href="#">50</a></li>
+                <li><a href="#">》</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 缺少：
+1、footer
+2、侧边固定工具栏
+3、商品图片复制 -->

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品管理</title>
+    <link rel="stylesheet" href="./goodsManage.css" type="text/css">
+    <script type="text/javascript" src="./goodsManage.js"></script>
+</head>
+<body>
+    <form action="" method="POST" name="" enctype="multipart/form-data">
+    <!-- headerNav begin -->
+    <div id="headerNav">
+        <ul id="headerNavLeft">
+            <li class="nav" id="username">
+                <span>牛奶草莓</span>
+                <ul class="subNav">
+                    <li>账号管理</li>
+                    <li id="signOut">退出登录</li>
+                </ul>
+            </li>
+            <li class="nav">我的订单</li>
+        </ul>
+        <ul id="headerNavRight">
+            <li class="nav">
+                <span class="navTitle">我的主页</span>
+            </li>
+            <li class="nav">
+                <span class="navTitle">用户营销</span> 
+            </li>
+            <li class="nav">
+                <span class="navTitle">商家论坛</span>
+            </li>
+            <li class="nav">
+                <span class="navTitle">卖家中心</span>
+                <img class="arrowImg" src="../../assesets/imgs/arrow.png">
+                <ul class="subNav">
+                    <li>卖家服务中心</li>
+                    <li>卖家培训中心</li>
+                    <li>体验中心</li>
+                    <li>问商友</li>
+                </ul>
+            </li>
+            <li class="nav">
+                <span class="navTitle">商家客服</span>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="secNav">
+        <div class="left">
+            <div>
+                <img src="../../assesets/imgs/logo2.png" alt="">
+            </div>
+            <span>商家后台</span>
+        </div>
+        <div class="right">
+            <input class="search1" type="text" name="" placeholder=" 输入商品标签或订单号进行搜索">
+            <input class="search2" type="bottom" value="搜索" name="">
+        </div>
+    </div>
+    <!-- container begin -->
+    <div class="container">
+        <div class="sideNav">
+            <span>
+                全部功能
+            </span>
+            <ul>
+                <li class="checked">商品管理</li>
+                <li>
+                    <a href="#">订单管理</a>    
+                </li>
+                <li>我的收藏</li>
+                <li>促销推广</li>
+                <li>违规</li>
+                <li>售后</li>
+                <li>仲裁</li>
+            </ul>
+        </div>
+        <div class="mainContainer">
+            <div class="navBar">
+                <ul>
+                    <li class="checked">全部商品</li>
+                    <li>出售中的商品</li>
+                    <li>仓库中的商品</li>
+                </ul>
+            </div>
+            <div class="searchArea">
+                <ul>
+                    <li>
+                        <span>宝贝名称</span>
+                        <input type="text" name="">
+                    </li>
+                    <li>
+                        <span>商家编码</span>
+                        <input type="text" name="">
+                    </li>
+                    <li>
+                        <span>宝贝类别</span>
+                        <select name="" id="">
+                            <option value="-"></option>
+                            <option value="discount">会员折扣宝贝</option>
+                            <option value="team">组合宝贝</option>
+                            <option value="welfare">公益商品</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchArea">
+                <ul>
+                    <li>
+                        <span>价格</span>
+                        <input class="input" type="text" name="">
+                        <span>到</span>
+                        <input class="input" type="text" name="">
+                    </li>
+                    <li>
+                        <span>总销量</span>
+                        <input class="input" type="text" name="">
+                        <span>到</span>
+                        <input class="input" type="text" name="">
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <input type="button" value="搜索">
+                <input type="button" value="重置">
+            </div>
+            <div class="infoBar">
+                <ul>
+                    <li class="item">宝贝名称</li>
+                    <li class="price">单价</li>
+                    <li class="count">库存</li>
+                    <li class="uptime">上架时间</li>    
+                    <li class="publishTime">发布时间</li>
+                </ul>
+            </div>
+            <div class="itemDetail">
+                <div class="dealTime">
+                    <div class="time">
+                        <span> 商品ID：000</span>
+                    </div>
+                    <div class="deleteBtn">
+                        <img src="../../assesets/imgs/delete2.png" alt="">
+                    </div>
+                    <div class="changeBtn">
+                        <a href="#">
+                            <img src="../../assesets/imgs/pen1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <ul>
+                        <li class="checkBox">
+                            <input class="takeIt store1" type="checkbox" name="">
+                        </li>
+                        <li class="message">
+                            <div>
+                                <img src="../../assesets/imgs/detail1.PNG" alt="">
+                            </div>
+                            <div class="messageTxt">
+                                <span class="itemTitle">【赠视频+期末测试】星火高等数学 同济七版上册高数辅导 考研数学教</span><br>
+                                <span>颜色分类：二手八成新第七版</span>
+                            </div>
+                        </li>
+                        <li class="unitPrice">
+                            <div class="beforePrice">￥34.80</div>
+                            <div>￥
+                                <span class="nowPrice">20.00</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>1989</span><br>
+                            <input id="upBtn" type="button" value="上架">
+                        </li>
+                        <li class="operate">
+                            <div>2019-1-8</div><br>
+                            <div>15:00</div>
+                        </li>
+                        <li class="sumPrise">
+                            <div>2019-1-9</div><br>
+                            <div>15:00</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemDetail">
+                <div class="dealTime">
+                    <div class="time">
+                        <span> 商品ID：000</span>
+                    </div>
+                    <div class="deleteBtn">
+                        <img src="../../assesets/imgs/delete2.png" alt="">
+                    </div>
+                    <div class="changeBtn">
+                        <a href="#">
+                            <img src="../../assesets/imgs/pen1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <ul>
+                        <li class="checkBox">
+                            <input class="takeIt store1" type="checkbox" name="">
+                        </li>
+                        <li class="message">
+                            <div>
+                                <img src="../../assesets/imgs/detail1.PNG" alt="">
+                            </div>
+                            <div class="messageTxt">
+                                <span class="itemTitle">【赠视频+期末测试】星火高等数学 同济七版上册高数辅导 考研数学教</span><br>
+                                <span>颜色分类：二手八成新第七版</span>
+                            </div>
+                        </li>
+                        <li class="unitPrice">
+                            <div class="beforePrice">￥34.80</div>
+                            <div>￥
+                                <span class="nowPrice">20.00</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>1989</span><br>
+                            <input id="upBtn" type="button" value="上架">
+                        </li>
+                        <li class="operate">
+                            <div>2019-1-8</div><br>
+                            <div>15:00</div>
+                        </li>
+                        <li class="sumPrise">
+                            <div>2019-1-9</div><br>
+                            <div>15:00</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div>
+</form>
+</body>
+</html>

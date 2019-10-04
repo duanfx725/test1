@@ -1,0 +1,548 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    position: relative;
+    background-color: #f2f2f2;
+}
+.clear{
+    clear: both;
+}
+/* headerNav begin */
+#headerNav{
+    padding: 0px 80px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+
+#headerNavLeft{
+    float: left;
+}
+#headerNav .nav{
+    position: relative;
+    float: left;
+    /* margin-left: 20px; */
+    padding: 6px 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+#username .nav:hover{
+    background-color: rgb(255, 233, 233);
+}
+#username .subNav li:hover{
+    box-shadow: 0 2px 2px 2px rgb(255, 233, 233);
+}
+#headerNav .nav:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover  .navTitle{
+    color: #db4848;
+}
+#headerNavRight{
+    float: right;
+}
+#headerNav .arrowImg{
+    width: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+#headerNav .shopCartIcon{
+    width: 20px;
+    vertical-align: middle;
+}
+.subNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.subNav li{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.subNav li:hover{
+    background-color: #fff;
+}
+#headerNav .nav:hover .subNav{
+    display: block;
+}
+.shopCart{
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(196, 196, 196);
+    font-size: 12px;
+    background-color: #fff;
+}
+.shopCart .title{
+    display: block;
+    margin: 14px 10px;
+    font-weight: bold;
+    color: #333;
+}
+.shopCart ul .img{
+    float: left;
+    vertical-align: middle;
+}
+.shopCart ul .txt{
+    float: left;
+}
+.shopCart ul .txt div{
+    margin: 5px;
+}
+.shopCart ul .txt a{
+    color: rgb(78, 78, 78);
+}
+.shopCart ul .txt .money{
+    float: right;
+    color: #db4848;
+}
+.shopCart ul{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    
+}
+.shopCart ul li{
+    background-color: #fff;
+}
+.shopCart ul .delete{
+    float: right;
+    color: #333;
+}
+.shopCart ul .delete:hover{
+    color: #db4848;
+}
+#checkShopCart{
+    float: right;
+    background-color: #db4848;
+    padding: 5px 10px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* header begin */
+.header{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 0;
+    z-index: 1; 
+}
+.headerContainer{
+    width: 1000px;
+    margin: 0 auto;
+}
+.headerContainer .logo{
+    float: left;
+}
+.searchContainer{
+    float: right;
+    margin-top: 26px;
+}
+.headerContainer .searchBox{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    border: 2px solid #db4848;
+    border-radius: 10px;
+}
+.headerContainer .searchBox #search{
+    width: 500px;
+}
+.headerContainer .searchTip span{
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.headerContainer .searchTip span:hover{
+    color: #db4848;
+}
+.headerContainer .searchBox{
+    margin-top: 6px;
+    height: 30px;
+    line-height: 30px;
+}
+.searchBox .button{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #db4848;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #db4848;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.searchBox img{
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    margin-top: -8.5px;
+    cursor: pointer;
+}
+/* container begin */
+.container{
+    overflow: hidden;
+    width: 1200px;
+    margin: 20px auto;
+}
+.tagsContainer{
+    float: left;
+    background-color: #fff;
+    width: 200px;
+    height: 420px;
+    margin: 0 20px;
+}
+.tagsContainer li .mainTags{
+    color: #666;
+    padding: 10px 20px;
+}
+.tagsContainer li:hover{
+    background-color: rgb(255, 241, 241);
+}
+.tagsContainer li .tags{
+    cursor: pointer;
+    font-size: 14px;
+}
+.tagsContainer li .tags:hover{
+    color: #db4848;
+}
+.tagsContainer li .subTags{
+    display: none;
+    background-color: #db7171;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 0 ;
+}
+.tagsContainer li .subTags a{
+    display: block;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.tagsContainer li .subTags a:hover{
+    text-decoration: underline;
+}
+/* ——————————————————————修改—————————————————————— */
+/* .tagsContainer li:hover .subTags{
+    display: block;
+} */
+.tagsContainer li .tagChecked{
+    display: block;
+}
+
+/* 轮播图 */
+#container{ 
+    float: left;
+    width: 600px; 
+    height: 400px; 
+    overflow: hidden; 
+    position: relative;
+}
+#list { 
+    width: 4200px; 
+    height: 400px; 
+    position: absolute; 
+    z-index: 1;
+}
+#list img { 
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+#buttons { 
+    position: absolute; 
+    height: 10px; 
+    width: 100px; 
+    z-index: 2; 
+    bottom: 20px; 
+    left: 250px;
+}
+#buttons span { 
+    cursor: pointer; 
+    float: left; 
+    border: 1px solid #fff; 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background: #333; 
+    margin-right: 5px;
+}
+#buttons .on {  
+    background: #db4848;
+}
+.arrow { 
+    cursor: pointer; 
+    display: none;    
+    line-height: 39px; 
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: bold; 
+    width: 40px; 
+    height: 40px;  
+    position: absolute;
+    z-index: 2; 
+    top: 180px; 
+    background-color: RGBA(0,0,0,.3); 
+    color: #fff;
+}
+.arrow:hover { 
+    background-color: 
+    RGBA(0,0,0,.7);
+}
+#container:hover .arrow { 
+    display: block;
+}
+#prev { 
+    left: 20px;
+}
+#next { 
+    right: 20px;
+}
+/* userCenter begin */
+.userCenter{
+    float: right;
+    width: 340px;
+    border: 1px solid #db7171;
+    background-color: #fff;
+}
+.userCenter img{
+    vertical-align: middle;
+}
+.userCenterTop{
+    overflow: hidden;
+    width: 280px;
+    margin: 0 auto;
+    color: #333;
+}
+.userCenterTop img{
+    border: 1px solid rgb(245, 149, 149);
+    border-radius: 50%
+}
+.userCenter .headSculpture{
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #db4848;
+    margin: 40px 20px 20px 40px;
+}
+.subUserCenter{
+    float: left;
+    margin: 50px 0 20px ;
+    font-size: 16px;
+}
+.subUserCenter .vip{
+    background-color: rgb(255, 166, 166);
+    border-radius: 10px;
+    padding: 3px 5px;
+    margin: 5px 0;
+    font-size: 12px;
+    color: #fff;
+}
+.subUserCenterTop #userName{
+    font-weight: bold;
+}
+.goodsMessage{
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.goodsMessage a{
+    float: left;
+    display: block;
+    margin: 10px;
+    width: 50px;
+    text-align: center;
+}
+.goodsMessage .goodsMessageNum{
+    font-weight: bold;
+    color: #db4848;
+    font-size: 18px;
+}
+.goodsMessage .goodsMessageTxt{
+    color: #666;
+    font-size: 14px;
+}
+.buyer{
+    overflow: hidden;
+}
+.seller{
+    overflow: hidden;
+    width: 150px;
+    margin: 0 auto;
+}
+.userCenterBottom{
+    overflow: hidden;
+    width: 300px;
+    margin: 20px auto 40px;
+}
+.userCenterBottom a{
+    display: block;
+}
+.userCenterBottom img{
+    height: 40px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.userCenterBottom div{
+    float: left;
+    width: 140px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+.userCenterBottom .left{
+    margin-right: 20px;
+}
+.userCenterBottom div .title{
+    
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+/* tab bar begin */
+.tabBar{
+    overflow: hidden;
+    width: 1000px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: #db4848;
+    color: #fff;
+}
+.tabBar li{
+    float: left;
+    margin: 20px 27px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tabBar #checked{
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+}
+.tabBar li:hover{
+    border-bottom: 1px solid #fff;
+}
+/* goods Exhibition begin */
+.goodsContainer{
+    position: relative;
+    width:1000px;
+    margin: 20px auto;
+	-moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
+}
+.goods{
+    position: relative;
+    overflow: hidden;
+    margin-bottom:20px;	 
+	-moz-page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+	color:#fff;
+}
+.goods:nth-of-type(3n){ 
+    height:243px; 
+    background:#000; 
+}
+.goods:nth-of-type(3n+1){ 
+    height:263px; 
+    background:#111; 
+}
+.goods:nth-of-type(3n+2){ 
+    height:283px; 
+    background:#222; 
+}
+.goodsIntroduce{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 188px;
+    height: 100px;
+    background-color: #fff;
+    /* color: #666; */
+    /* font-size: 14px; */
+}
+.goodsIntroduce .line_1{
+    font-size: 14px;
+    color: #333;
+    margin: 10px;
+}
+.goodsIntroduce .line_2{
+    font-size: 12px;
+    color: #666;
+    margin: 10px;
+}
+.goodsIntroduce .line_3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #db4848;
+}
+.goodsIntroduce .line_3 img{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+/* fixed container begin */
+.fixedContainer{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    margin-top: -154px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 10px;
+    /* border: #db7171 1px solid; */
+}
+.fixedContainer li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(224, 135, 135);
+    background-color: #fff;
+    cursor: pointer;
+}
+.fixedContainer .last{
+    border:none;
+}
+.fixedContainer li:hover{   
+    background-color: #db4848;
+    color: #fff;
+}
+.fixedContainer #toTheTop{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #db4848;
+    text-align: center;
+    line-height: 60px;
+    display: none;
+}   
+.fixedContainer #toTheTop img{
+    margin-top: 5px;
+}
+    

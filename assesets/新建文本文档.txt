@@ -1,0 +1,41 @@
+tags：21:21 2019/7/23
+教材教参
+跑腿代购
+电子产品
+日用家具
+美妆清洁
+二手衣物
+鞋靴箱包
+账号共享
+
+user—
+userName
+password
+studentCode
+phone
+headSculpture
+———adress list
+———payway list & payway password
+as————customer
+——cart（购物车） goods list
+————goods num
+————goods sumprice
+——mark（收藏夹）goods list
+as————seller
+——————goods 
+—————goodsName
+—————introduction
+—————price
+—————stock（库存）
+—————tags
+
+seller————order————customer
+————goodsId
+————goodsNum
+————sumPrice
+————beginTime
+————isFinish？
+
+
+
+？？？
